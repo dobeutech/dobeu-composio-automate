@@ -1,0 +1,24 @@
+{
+  "workingDirectory": "dobeu-composio-automate",
+  "git": {
+    "branch": "main",
+    "lastCommitMessage": "Initial commit: automation architect config for Claude Code",
+    "clean": true
+  },
+  "build": {
+    "status": "n/a",
+    "notes": "Config-only repo — no build step required"
+  },
+  "test": {
+    "status": "n/a",
+    "notes": "Validation is manual: clone → run claude → verify CLAUDE.md loads"
+  },
+  "platform": "claude-code",
+  "connections": {
+    "composio": "active",
+    "rube": "active",
+    "make": "active",
+    "github": "active"
+  },
+  "handoffNotes": "Repo initialized. Next session should run AUTO-001 (Composio connection audit)."
+}
