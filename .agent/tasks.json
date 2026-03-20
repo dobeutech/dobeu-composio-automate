@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "project": "dobeu-composio-automate",
+    "created": "2026-03-20T01:45:00Z",
+    "lastUpdated": "2026-03-20T01:45:00Z"
+  },
+  "features": [
+    {
+      "id": "SETUP-001",
+      "category": "infrastructure",
+      "description": "Create GitHub repo with consolidated automation architect config",
+      "steps": [
+        "Create repo under dobeutech",
+        "Commit CLAUDE.md with tool routing decision tree",
+        "Commit Append_system_prompt (compact + extended)",
+        "Add .claude/settings.json for Claude Code",
+        "Add .agent/ checkpoint scaffolding",
+        "Add README.md with architecture docs"
+      ],
+      "status": "complete",
+      "passes": true,
+      "priority": 1,
+      "dependencies": []
+    },
+    {
+      "id": "AUTO-001",
+      "category": "automation",
+      "description": "Run first Composio connection audit and automation discovery",
+      "steps": [
+        "Enumerate all connected Composio apps",
+        "Identify underused connections",
+        "Map source-to-destination gaps",
+        "Generate automation recommendations report"
+      ],
+      "status": "pending",
+      "passes": false,
+      "priority": 2,
+      "dependencies": ["SETUP-001"]
+    },
+    {
+      "id": "AUTO-002",
+      "category": "automation",
+      "description": "Build first cross-system workflow using tool routing tree",
+      "steps": [
+        "Select highest-value workflow from discovery",
+        "Design trigger and action chain",
+        "Implement using appropriate layer (native MCP / Composio / Make.com)",
+        "Test and validate",
+        "Document in .agent/progress.md"
+      ],
+      "status": "pending",
+      "passes": false,
+      "priority": 3,
+      "dependencies": ["AUTO-001"]
+    },
+    {
+      "id": "AUTO-003",
+      "category": "automation",
+      "description": "Create first persistent Make.com scenario for a recurring workflow",
+      "steps": [
+        "Identify best candidate for scheduled automation",
+        "Build Make.com scenario with error handling",
+        "Configure webhook or schedule trigger",
+        "Test execution",
+        "Document in .agent/progress.md"
+      ],
+      "status": "pending",
+      "passes": false,
+      "priority": 4,
+      "dependencies": ["AUTO-001"]
+    }
+  ]
+}
