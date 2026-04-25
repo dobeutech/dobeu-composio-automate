@@ -321,6 +321,8 @@ Sequential; `COMPOSIO_MULTI_EXECUTE_TOOL` forbidden for primary state (permitted
 <a id="appendix-l"></a>
 ## Appendix L — Security scenarios (SEC-001 through SEC-005)
 
+> **As of v5.1 amendment (2026-04-25): authoritative version is `Implementation/security-scenarios-spec.md`. SEC-004 user-facing rotation procedure: see `Implementation/secret-rotation-runbook.md`. SEC-001 + SEC-002 promoted to Stage 0B primitives (0B.4 + 0B.5) per v5.1 Group B § B2. This Appendix L is now a mirror.**
+
 5 Make scenarios enforcing security posture across all of Stage 4.
 
 | ID | Name | Trigger | Owned content |
@@ -337,6 +339,8 @@ All 5 reference subscenario 4688116 for exception handling and 4688121 for miles
 
 <a id="appendix-m"></a>
 ## Appendix M — Exclusion Zone failure-domain map
+
+> **As of v5.1 amendment (2026-04-25): authoritative version is `Implementation/exclusion-zone-failure-map.md`. This Appendix M is now a mirror. See also `Implementation/v5.1-amendment.md` § Group D.**
 
 **Forbidden identifiers:**
 - GitHub: `dobeutech/agent-usl-website`, alias `dobeutech/usl-agent-website`
